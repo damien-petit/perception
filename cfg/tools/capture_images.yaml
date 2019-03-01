@@ -1,5 +1,5 @@
-output_dir: /nfs/diskstation/projects/dex-net/bin_picking/datasets/images
-calib_dir: /nfs/diskstation/calib
+output_dir: /damien/img_dir/datasets/images
+calib_dir: /damien/calib
 
 sensors:
 #  primesense:
@@ -11,10 +11,15 @@ sensors:
 #    type: ensenso
 #    frame: ensenso
 #    num_images: 3
-  phoxi:
-    type: phoxi
-    frame: phoxi
-    device_name: 1703005
-    size: small
-    num_images: 1
-    
+#  phoxi:
+#    type: phoxi
+#    frame: phoxi
+#    device_name: 1703005
+#    size: small
+#    num_images: 1
+  realsense:
+    type: realsense
+    frame: realsense
+    cam_id: 827312073571
+    filter_depth: True
+    num_images: 36

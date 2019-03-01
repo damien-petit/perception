@@ -92,7 +92,7 @@ class RealSenseSensor(CameraSensor):
     def _config_pipe(self):
         """Configures the pipeline to stream color and depth.
         """
-        self._cfg.enable_device(self.id)
+        self._cfg.enable_device(str(self.id))
 
         # configure the color stream
         self._cfg.enable_stream(

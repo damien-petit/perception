@@ -69,7 +69,8 @@ if __name__ == '__main__':
 
         # start the sensor
         sensor.start()
-        camera_intr = sensor.ir_intrinsics
+        #camera_intr = sensor.ir_intrinsics
+        camera_intr = sensor.color_intrinsics
         camera_intr.save(os.path.join(save_dir, '%s.intr' %(sensor.frame)))
 
         # get raw images
