@@ -46,7 +46,8 @@ class PrimesenseSensor(CameraSensor):
     FOCAL_X = 525.
     FOCAL_Y = 525.
     FPS = 30
-    OPENNI2_PATH = '/home/autolab/Libraries/OpenNI-Linux-x64-2.2/Redist'
+    #OPENNI2_PATH = '/home/autolab/Libraries/OpenNI-Linux-x64-2.2/Redist'
+    OPENNI2_PATH = '/damien/OpenNI-Linux-x64-2.2/Redist'
 
     def __init__(self, registration_mode=PrimesenseRegistrationMode.DEPTH_TO_COLOR,
                  auto_white_balance=False, auto_exposure=True,

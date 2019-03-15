@@ -2,6 +2,11 @@ output_dir: /damien/img_dir/datasets/images
 calib_dir: /damien/calib
 
 sensors:
+   primesense:
+     type: primesense
+     frame: primesense_overhead
+     auto_white_balance: 0
+     num_images: 1
 #  primesense:
 #    type: primesense_ros
 #    frame: primesense_overhead
@@ -17,9 +22,9 @@ sensors:
 #    device_name: 1703005
 #    size: small
 #    num_images: 1
-  realsense:
-    type: realsense
-    frame: realsense
-    cam_id: 827312073571
-    filter_depth: True
-    num_images: 36
+#  realsense:
+#    type: realsense
+#    frame: realsense
+#    cam_id: 827312073571
+#    filter_depth: True
+#    num_images: 36
